@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FM Rack's Manufacturing | Gujranwala</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#000000,#111111,#1a1a1a);
+color:white;
+}
+.logo-container {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #0f0f0f, #000000 70%);
+  color: white;
+  overflow-x: hidden;
+}
+
+.logo {
+  width: 60px;
+}
+
+.about-section {
+  padding: 70px 20px;
+  background: #000;
+  text-align: center;
+}
+
+.about-title {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.about-card {
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+  padding: 35px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 0 30px rgba(0,255,200,0.2);
+}
+
+.about-card p {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+nav{
+background:#000;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #333;
+}
+
+nav h2{
+color:#f5f5f5;
+letter-spacing:2px;
+}
+.hero-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;   /* IMPORTANT */
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #00ffd5;
+  filter: blur(120px);
+  opacity: 0.12;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.hero-card {
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+  padding: 40px;
+  border-radius: 25px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 40px rgba(0,255,200,0.25);
+}
+
+.hero-card h1 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hero-card p {
+  color: #bbb;
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.hero-card {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(145deg, #111, #1a1a1a);
+  padding: 50px;
+  border-radius: 25px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 40px rgba(0,255,200,0.25);
+  animation: fadeUp 3.1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-btn {
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 12px;
+  background: black;
+  border: 1px solid #00ffd5;
+  color: white;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #00ffd5;
+  color: black;
+}
+
+.btn{
+background:linear-gradient(145deg,#222,#000);
+border:1px solid #444;
+color:white;
+padding:14px 30px;
+margin:10px;
+border-radius:6px;
+text-decoration:none;
+transition:0.4s;
+}
+
+.btn:hover{
+background:#111;
+box-shadow:0 0 15px #555;
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+font-size:30px;
+letter-spacing:1px;
+color:#ddd;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:linear-gradient(145deg,#111,#000);
+border:1px solid #333;
+padding:20px;
+border-radius:10px;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px #222;
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#fff;
+}
+
+.card p{
+color:#aaa;
+margin-bottom:15px;
+}
+
+.contact{
+text-align:center;
+background:#000;
+padding:60px 20px;
+}
+
+footer{
+background:#000;
+padding:20px;
+text-align:center;
+border-top:1px solid #333;
+color:#888;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+color:white;
+text-decoration:none;
+font-size:22px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:30px;
+}
+}
+</style>
+</head>
+<body>
+ <section class="hero-section"> 
+  <div class="hero-card">
+<div class="logo-container">
+  <img src="logo.png" class="logo">
+   <h1>FM Rack's Manufacturing</h1>
+</div>
+</section>
+<section class="hero-section">
+
+  <div class="hero-card">
+    <h1>Welcome To FM Rack's Manufacturing</h1>
+
+    <p>
+      Premium Quality Steel Dish Racks, Fruit Baskets
+      & Sink Racks in Gujranwala
+    </p>
+
+    <div class="hero-buttons">
+      <a href="https://wa.me/923217152187" target="_blank" class="hero-btn">
+        Order on WhatsApp (0317)
+      </a>
+
+      <a href="https://wa.me/923073225340" target="_blank" class="hero-btn">
+        Order on WhatsApp (0307)
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about-section">
+
+  <h2 class="about-title">About FM Rack's Manufacturing</h2>
+
+  <div class="about-card">
+    <p>
+      FM Rack's Manufacturing is a professional steel rack manufacturer
+      based in Gujranwala. We specialize in high-quality stainless steel
+      dish racks, fruit baskets, sink racks, spoon stands and glass stands.
+      Our products are durable, rust-resistant and designed for modern kitchens.
+    </p>
+  </div>
+</section>
+
+
+
+  <div class="card">
+<h2 class="section-title">OUR PRODUCTS</h2>
+</div>
+<div class="products">
+
+<div class="card">
+<img src="YOUR_FRUIT_IMAGE.jpg" class="product-img">
+<h3>Fruit Basket</h3>
+<p>High quality stainless steel fruit basket with premium finishing.</p>
+<a class="btn" href="https://wa.me/923217152187?text=I want to order Fruit Basket">Order Now</a>
+</div>
+<div class="card">
+  <img src="glass.jpg" class="product-img">
+  <h2>Glass Stand</h2>
+  <p>Strong and stylish glass stand with rust-free coating.</p>
+  <a href="https://wa.me/923073225340" class="btn">Order Now</a>
+
+</div>
+<div class="card">
+  <img src="spoon.jpg" class="product-img">
+  <h2>Spoon Stand</h2>
+  <p>Premium stainless steel spoon holder for modern kitchens.</p>
+  <a href="https://wa.me/923217152187" class="btn">Order Now</a>
+</div>
+
+<div class="card">
+<img src="YOUR_DISH_IMAGE.jpg"class="product-img">
+<h3>Dish Rack</h3>
+<p>Durable and rust-free steel dish rack for modern kitchens.</p>
+<a class="btn" href="https://wa.me/923217152187?text=I want to order Dish Rack">Order Now</a>
+</div>
+
+
+<div class="card">
+<img src="YOUR_2LAYER_IMAGE.jpg"class="product-img">
+<h3> Sink Rack</h3>
+<p>Heavy-duty  organizer with strong frame support.</p>
+<a class="btn" href="https://wa.me/923073225340?text=I want to order Sink Rack">Order Now</a>
+</div>
+
+<div class="card">
+<img src="YOUR_3LAYER_IMAGE.jpg"class="product-img">
+<h3>3 Layer Sink Rack</h3>
+<p>Premium 3 layer rack with industrial quality finishing.</p>
+<a class="btn" href="https://wa.me/923073225340?text=I want to order 3 Layer Sink Rack">Order Now</a>
+</div>
+
+</div>
+</section>
+
+<section class="contact">
+<h2 class="section-title">Contact Us</h2>
+<p>📍 Gujranwala, Pakistan</p>
+<p>📞 0321-7152187 | 0307-3225340</p>
+</section>
+
+<footer>
+© 2026 FM Rack's Manufacturing | All Rights Reserved
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/923217152187" target="_blank">💬</a>
+<!-- Image Popup Modal -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="popupImg">
+</div>
+
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.95);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+</style>
+
+<script>
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("popupImg");
+const closeBtn = document.querySelector(".close");
+
+document.querySelectorAll(".product-img").forEach(img => {
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+});
+
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+</body>
+</html>
